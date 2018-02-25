@@ -1,24 +1,99 @@
+html {
+  margin: 0;
+}
+
 body {
-  background-color: #fbc547;
   color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center;
-}
+  font-family: Roboto;
+  margin: 0;
 
-a {
-  color: rgba(#000, 0.7);
+  .landing {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
 
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
+    .background-video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+
+
+      video {
+        width: 100%;
+      }
+    }
+
+    .title, .landing-buttons {
+      z-index: 2;
+    }
+
+    .title {
+      margin-top: 20%;
+      background-color: rgb(255,255,255);
+      padding: .2rem;
+      font-size: 70px;
+      font-weight: bold;
+    }
+
+    .landing-buttons {
+
+      .listen {
+        font-size: 25px;
+        padding: .5rem 1rem;
+        //border: 2px solid white;
+        cursor: pointer;
+        color: white;
+        margin-top: 1rem;
+        transition: .2s ease;
+
+        &:hover {
+          border-color: black;
+          color: black;
+          //background-color: white;
+        }
+      }
+    }
   }
-}
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem;
+  .about {
+    height: 109vh;
+    padding: 4rem;
+    text-align: center;
+
+    p {
+      margin-top: 5rem;
+      padding: 0 10rem;
+    }
+  }
+
+  .dates {
+
+    height: 100vh;
+
+    h3 {
+      text-align: center;
+    }
+    .events {
+      padding: 0 20%;
+      display: flex;
+      justify-content: space-between;
+
+      .event {
+        display: flex;
+      }
+    }
+  }
+
+  .updates {
+    height: 100vh;
+  }
+
+  .album {
+    height: 100vh;
+  }
 }
