@@ -208,7 +208,7 @@ def file_changed last_deploy
 end
 
 # this is the list of files we do not want to show in changed files
-EXCLUSION_LIST = [/.*~/, /^_.*/, ".DS_Store", "javascripts?", "js", /stylesheets?/, "css", /s[ca]ss/, /.*\.css/, /.*\.js/]
+#EXCLUSION_LIST = [/.*~/, /^_.*/, ".DS_Store", "javascripts?", "js", /stylesheets?/, "css", /s[ca]ss/, /.*\.css/, /.*\.js/]
 
 # return true if filename will most likely be visible to the user on
 # the published website (e.g., it is not javascript, css, ...)
